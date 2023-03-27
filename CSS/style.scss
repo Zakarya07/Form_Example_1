@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald';
+    font-variation-settings: 'wght' 200;
+  }
+  
+  @font-face {
+    font-family: 'Oswald';
+    src: url('../Fonts/Oswald/Oswald-VariableFont_wght.ttf');
+  }
+  
+  body {
+    background: linear-gradient(220deg, rgba(161, 107, 219,.75), rgba(116, 79, 190, 0.25)),url("../Images/bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+#form_contain {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    width: 24vw;
+    border-radius: 8px;
+    padding: 10px;
+    height:70%;  
+  
+    h1 {
+      text-align: center;
+      margin:5% auto;
+      font-size: 2.25em;
+      letter-spacing: 2px;
+    }
+  
+    p {
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 6%;
+      width: 90%;
+      margin:2.5% auto;
+      background-color: rgb(161, 177, 192);
+
+      input {
+        border: none;
+        margin: 8% 0;
+        padding:1.25vh 0;
+        border-bottom: 3px solid rgb(87, 16, 87);
+        font-size: 1.25em;
+        transition: all .5s linear;
+        &:focus{
+            outline: none;
+            letter-spacing:2px;
+            font-weight:600;
+        }
+    }
+      
+      #btn_submit {
+          cursor: pointer;
+        background:#8063e6;
+        font-size: 1.15em;
+        height: 5vh;
+        color: white;
+        width: 100%;
+        margin: 10% auto;
+        border: none;
+        transition:all .5s linear;
+            &:hover {
+          background: #d17ebf;
+          letter-spacing: 2.5px;
+        }
+      }
+    }
+    
+  }
+  
+  
+  #form_contain p {
+      font-size: 1.25em;
+      font-variation-settings: 'wght' 300;
+
+      a{
+        text-decoration: none;
+        transition: font-variation-settings 1s;
+                color: rgb(71, 71, 212);
+      }
+      &:hover a{
+          font-variation-settings: 'wght' 500;
+        }
+
+  }
